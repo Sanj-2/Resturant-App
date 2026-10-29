@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Smythe&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <header>
+            <div>
+                <h1>Jimmy’s Diner</h1>
+                <p>The best burgers and pizzas in town.</p>
+            </div>
+        </header>
+        <div class="body">
+            <div class="menu" id="menu">
+            </div>
+            <div class="cart" id="cart">
+            </div>
+            <form class="card-details display" id="card-details">
+                <h4>Enter card details</h4>
+
+                <input type="text" placeholder="Enter your name" required>
+
+                <input type="text" placeholder="Enter card number" inputmode="numeric" pattern="[0-9]{16}"
+                    maxlength="16" required>
+
+                <input type="text" placeholder="Enter CVV" inputmode="numeric" pattern="[0-9]{3}" maxlength="3"
+                    required>
+
+                <button class="checkout-button" id="pay-button" type="submit">Pay</button>
+            </form>
+        </div>
+    </div>
+    <script src="./index.js" type="module"></script>
+    <script src="./data.js"></script>
+</body>
+
+</html>
